@@ -51,3 +51,26 @@ body{font-size:15px;line-height:1.45;font-weight:500;-webkit-font-smoothing:anti
 .ptt.ptt-off{opacity:.65}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--bad) 45%,transparent)}50%{box-shadow:0 0 0 7px transparent}}
 .voicehint{font-size:11px;color:var(--muted);text-align:center;margin-top:6px}
+
+
+/* ===== Coach v2 â rapi & mudah dibaca ===== */
+.coach-hero{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+.coach-hero-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.coach-hero-label{font-size:12px;font-weight:600;color:var(--muted)}
+.coach-hero-amt{font-size:30px;font-weight:750;letter-spacing:-.03em;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.coach-hero-sub{font-size:12px;color:var(--muted);margin-bottom:10px}
+.coach-hero-foot{font-size:11.5px;color:var(--muted);margin-top:8px}
+.coach-metrics{margin-bottom:0}
+.coach-metric{padding:11px 0;border-top:1px solid var(--line)}
+.coach-metric:first-child{border-top:0;padding-top:2px}
+.coach-metric-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}
+.coach-metric-name{font-size:13.5px;font-weight:650}
+.coach-metric-val{font-size:14px;font-weight:750;font-variant-numeric:tabular-nums}
+.coach-metric-sub{font-size:11.5px;color:var(--muted);margin-top:6px}
+.coach-quick{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.bar.good{background:linear-gradient(90deg,var(--good),#5ee0b0)}
+.bar.warn{background:linear-gradient(90deg,var(--warn),#ffd27a)}
+.bar.bad{background:linear-gradient(90deg,var(--bad),#ff89a6)}
+.coach-metric-val.good,.pillmini.good{color:var(--good)}
+.coach-metric-val.warn,.pillmini.warn{color:var(--warn)}
+.coach-metric-val.bad,.pillmini.bad{color:var(--bad)}
