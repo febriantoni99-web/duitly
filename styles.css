@@ -74,3 +74,26 @@ body{font-size:15px;line-height:1.45;font-weight:500;-webkit-font-smoothing:anti
 .coach-metric-val.good,.pillmini.good{color:var(--good)}
 .coach-metric-val.warn,.pillmini.warn{color:var(--warn)}
 .coach-metric-val.bad,.pillmini.bad{color:var(--bad)}
+
+
+/* ===== PWA install button v2 ===== */
+.install-btn{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--nav,66px) + 80px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px;box-shadow:0 12px 30px rgba(0,0,0,.28);animation:up .22s ease}
+.install-btn-go{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;border:0;border-radius:999px;padding:9px 15px;font-weight:700;font-size:13px;cursor:pointer}
+.install-btn-x{width:30px;height:30px;flex:0 0 auto;border-radius:999px;background:var(--card2);border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:16px;line-height:1;cursor:pointer}
+
+/* Aksesibilitas: kurangi animasi bila diminta sistem */
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}}
+
+
+/* ===== Kalkulator Shopee ===== */
+.sp-title{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:16px 0 8px}
+.sp-line{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.sp-line span{color:var(--muted)}
+.sp-line b{font-variant-numeric:tabular-nums}
+.sp-line.strong{border-bottom:1px solid var(--line)}
+.sp-line.strong span{color:var(--text);font-weight:700}
+.sp-line.strong b{font-size:15px}
+.sp-line.good b{color:var(--good)}
+.sp-line.warn b{color:var(--warn)}
+.sp-line.bad b{color:var(--bad)}
+.sp-sep{font-size:11.5px;color:var(--muted);margin:12px 0 2px;opacity:.85}
