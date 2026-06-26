@@ -97,3 +97,15 @@ body{font-size:15px;line-height:1.45;font-weight:500;-webkit-font-smoothing:anti
 .sp-line.warn b{color:var(--warn)}
 .sp-line.bad b{color:var(--bad)}
 .sp-sep{font-size:11.5px;color:var(--muted);margin:12px 0 2px;opacity:.85}
+
+/* mood bar + shopee saved products */
+.moodbar{display:flex;height:12px;border-radius:99px;overflow:hidden;margin-top:12px;background:var(--line)}
+.mood-seg{display:block;min-width:2px}
+.mood-seg.good{background:var(--good)}.mood-seg.warn{background:var(--warn)}.mood-seg.bad{background:var(--bad)}
+.mood-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:12px;color:var(--muted)}
+.mood-legend span{display:flex;align-items:center;gap:6px}
+.mood-legend .md{width:9px;height:9px;border-radius:50%;display:inline-block}
+.mood-legend .md.good{background:var(--good)}.mood-legend .md.warn{background:var(--warn)}.mood-legend .md.bad{background:var(--bad)}
+.sp-prod{cursor:pointer;transition:transform .08s ease}
+.sp-prod:active{transform:scale(.99)}
+.sp-del{color:var(--bad);cursor:pointer;font-weight:600}
